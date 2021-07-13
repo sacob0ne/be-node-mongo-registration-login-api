@@ -1,3 +1,10 @@
+// The node JWT middleware checks that the JWT token received in the http request 
+// from the client is valid before allowing access to the API, if the token is invalid 
+// a "401 Unauthorized" response is sent to the client.
+
+// JWT authentication is used on all routes except for the authenticate and register 
+// routes which are public.
+
 const expressJwt = require('express-jwt');
 const config = require('config.json');
 const userService = require('../users/user.service');

@@ -1,4 +1,10 @@
-﻿const express = require('express');
+﻿// The users controller defines all user routes for the api, the route definitions
+// are grouped together at the top of the file and the implementations are below.
+
+// Express is the web server used by the api, it's one of the most popular web 
+// application frameworks for NodeJS.
+
+const express = require('express');
 const router = express.Router();
 const userService = require('./user.service');
 

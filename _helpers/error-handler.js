@@ -1,3 +1,7 @@
+// The global error handler is used catch all errors and remove the need for 
+// redundant error handler code throughout the application. It's configured as 
+// middleware in the main server.js file.
+
 module.exports = errorHandler;
 
 function errorHandler(err, req, res, next) {

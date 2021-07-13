@@ -1,4 +1,11 @@
-﻿const config = require('config.json');
+﻿// The user service contains the core business logic for user authentication and management 
+// in the node api, it encapsulates all interaction with the mongoose user model and exposes 
+// a simple set of methods which are used by the users controller.
+
+// The top of the file contains the service method definitions so it's easy to see all 
+// methods at a glance, the rest of the file contains the method implementations.
+
+const config = require('config.json');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const db = require('_helpers/db');

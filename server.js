@@ -1,4 +1,7 @@
-﻿require('rootpath')();
+﻿// The server.js file is the entry point into the api, it configures application middleware,
+// binds controllers to routes and starts the Express web server for the api.
+
+require('rootpath')();
 const express = require('express');
 const app = express();
 const cors = require('cors');
